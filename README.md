@@ -1,2 +1,2 @@
 # commerceflow_data_platform
-Data platform for a fictitious e-commerce site
+Data platform for e-commerce site
