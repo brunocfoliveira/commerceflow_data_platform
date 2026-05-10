@@ -3,3 +3,5 @@ numpy
 duckdb
 jupyter
 python-dotenv
+dbt-core
+dbt-duckdb

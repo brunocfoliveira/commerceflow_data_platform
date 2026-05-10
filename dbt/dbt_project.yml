@@ -1,0 +1,14 @@
+name: commerceflow
+version: "1.0.0"
+config-version: 2
+
+profile: commerceflow
+
+model-paths: ["models"]
+
+models:
+  commerceflow:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
