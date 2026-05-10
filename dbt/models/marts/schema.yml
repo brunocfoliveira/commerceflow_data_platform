@@ -1,0 +1,109 @@
+version: 2
+
+models:
+  - name: mart_sales_by_category
+    description: "Sales performance by product category for delivered orders."
+    columns:
+      - name: category
+        description: "Product category in English when available."
+        tests:
+          - not_null
+          - unique
+
+      - name: delivered_orders
+        description: "Number of delivered orders in the category."
+        tests:
+          - not_null
+
+      - name: items_sold
+        description: "Number of sold items in the category."
+        tests:
+          - not_null
+
+      - name: product_revenue
+        description: "Total product revenue for delivered orders."
+        tests:
+          - not_null
+
+      - name: freight_revenue
+        description: "Total freight revenue for delivered orders."
+        tests:
+          - not_null
+
+      - name: average_order_value
+        description: "Average product revenue per delivered order."
+        tests:
+          - not_null
+
+  - name: mart_monthly_revenue
+    description: "Monthly revenue and order volume for delivered orders."
+    columns:
+      - name: order_month
+        description: "Month of the order purchase."
+        tests:
+          - not_null
+          - unique
+
+      - name: delivered_orders
+        tests:
+          - not_null
+
+      - name: items_sold
+        tests:
+          - not_null
+
+      - name: product_revenue
+        tests:
+          - not_null
+
+      - name: freight_revenue
+        tests:
+          - not_null
+
+      - name: average_order_value
+        tests:
+          - not_null
+
+  - name: mart_state_performance
+    description: "Sales performance by customer state for delivered orders."
+    columns:
+      - name: customer_state
+        description: "Customer state."
+        tests:
+          - not_null
+          - unique
+
+      - name: delivered_orders
+        tests:
+          - not_null
+
+      - name: items_sold
+        tests:
+          - not_null
+
+      - name: product_revenue
+        tests:
+          - not_null
+
+      - name: freight_revenue
+        tests:
+          - not_null
+
+      - name: average_order_value
+        tests:
+          - not_null
+
+  - name: mart_customer_retention
+    description: "Customer retention summary based on delivered orders."
+    columns:
+      - name: total_customers
+        tests:
+          - not_null
+
+      - name: repeat_customers
+        tests:
+          - not_null
+
+      - name: repeat_customer_percentage
+        tests:
+          - not_null
