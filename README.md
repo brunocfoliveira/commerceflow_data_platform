@@ -110,19 +110,7 @@ dbt intermediate model
 dbt analytics marts
       ↓
 Looker Studio dashboards
-=======
-Python ingestion scripts
-      ↓
-DuckDB local warehouse
-      ↓
-dbt staging models
-      ↓
-dbt analytics marts
-      ↓
-dbt tests and business insights
 
-to run local pipeline:
-./scripts/run_pipeline.sh
 
 ## dbt Documentation
 
