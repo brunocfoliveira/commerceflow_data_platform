@@ -96,7 +96,6 @@ dbt is used as the main transformation layer, managing staging models, analytics
 ```text
 Olist CSV files
       ↓
-<<<<<<< HEAD
 Google Cloud Storage
       ↓
 BigQuery raw dataset
