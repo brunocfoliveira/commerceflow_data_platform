@@ -248,3 +248,18 @@ terraform/.terraform.lock.hcl
 terraform/terraform.tfstate
 terraform/terraform.tfstate.backup
 terraform/terraform.tfvars
+
+# dbt local profile
+profiles.yml
+
+# Secrets
+secrets/
+.env
+
+# Airflow
+airflow/logs/
+airflow/plugins/
+airflow/airflow.db
+airflow/standalone_admin_password.txt
+.user.yml
+profiles.yml

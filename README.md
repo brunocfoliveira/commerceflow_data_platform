@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CommerceFlow - Commerce Data Platform
 
 CommerceFlow is a modern data engineering project that builds an end-to-end e-commerce analytics platform using Google Cloud Platform, BigQuery, dbt, Terraform and Airflow.
@@ -85,10 +86,18 @@ The raw CSV files are not stored in this repository.
 ## Cloud Data Pipeline
 
 The cloud pipeline follows this flow:
+=======
+# commerceflow_data_platform
+Data platform for e-commerce site
+
+## Local Architecture
+dbt is used as the main transformation layer, managing staging models, analytics marts, tests and documentation.
+>>>>>>> f73c1c4 (airflow orchestration dbt)
 
 ```text
 Olist CSV files
       ↓
+<<<<<<< HEAD
 Google Cloud Storage
       ↓
 BigQuery raw dataset
@@ -102,3 +111,26 @@ dbt intermediate model
 dbt analytics marts
       ↓
 Looker Studio dashboards
+=======
+Python ingestion scripts
+      ↓
+DuckDB local warehouse
+      ↓
+dbt staging models
+      ↓
+dbt analytics marts
+      ↓
+dbt tests and business insights
+
+to run local pipeline:
+./scripts/run_pipeline.sh
+
+## dbt Documentation
+
+The project includes dbt models, sources and tests.
+
+To generate the dbt documentation locally, run:
+
+```bash
+dbt docs generate --project-dir dbt --profiles-dir .
+>>>>>>> f73c1c4 (airflow orchestration dbt)
