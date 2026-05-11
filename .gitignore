@@ -236,3 +236,8 @@ Thumbs.db
 # dbt
 dbt/target/
 dbt/logs/
+
+# Secrets
+secrets/
+*.json
+.env

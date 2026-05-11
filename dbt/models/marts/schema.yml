@@ -107,3 +107,64 @@ models:
       - name: repeat_customer_percentage
         tests:
           - not_null
+  
+  - name: mart_payment_performance
+    description: "Payment performance by payment type for delivered orders."
+    columns:
+      - name: payment_type
+        description: "Payment method used by the customer."
+        tests:
+          - not_null
+          - unique
+
+      - name: orders
+        description: "Number of delivered orders using this payment type."
+        tests:
+          - not_null
+
+      - name: payment_records
+        description: "Number of payment records for this payment type."
+        tests:
+          - not_null
+
+      - name: total_payment_value
+        description: "Total payment value for delivered orders."
+        tests:
+          - not_null
+
+      - name: average_payment_value
+        description: "Average payment value for delivered orders."
+        tests:
+          - not_null
+
+      - name: average_installments
+        description: "Average number of payment installments."
+        tests:
+          - not_null
+          
+  - name: mart_delivery_review_performance
+    description: "Delivery performance and customer review score by delivery status."
+    columns:
+      - name: delivery_status
+        description: "Whether the order was delivered on time or late."
+        tests:
+          - not_null
+          - unique
+          - accepted_values:
+              arguments:
+                values:
+                  - on_time
+                  - late
+
+      - name: delivered_orders
+        description: "Number of delivered orders."
+        tests:
+          - not_null
+
+      - name: average_delivery_days
+        description: "Average number of days between purchase and delivery."
+        tests:
+          - not_null
+
+      - name: average_review_score
+        description: "Average customer review score."

@@ -1,6 +1,18 @@
 commerceflow:
-  target: dev
+  target: dev_duckdb
+
   outputs:
-    dev:
+    dev_duckdb:
       type: duckdb
       path: data/warehouse/commerceflow.duckdb
+
+    dev_bigquery:
+      type: bigquery
+      method: service-account
+      project: commerce-flow-data-platform
+      dataset: commerceflow_analytics
+      location: EU
+      threads: 4
+      keyfile: secrets/commerceflow-dbt-key.json
+      job_execution_timeout_seconds: 300
+      job_retries: 1

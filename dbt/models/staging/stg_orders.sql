@@ -7,4 +7,4 @@ SELECT
     CAST(order_delivered_carrier_date AS TIMESTAMP) AS order_delivered_carrier_date,
     CAST(order_delivered_customer_date AS TIMESTAMP) AS order_delivered_customer_date,
     CAST(order_estimated_delivery_date AS TIMESTAMP) AS order_estimated_delivery_date
-FROM orders
+FROM {{ source('olist', 'orders') }}
