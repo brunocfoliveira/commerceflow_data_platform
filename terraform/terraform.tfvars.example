@@ -1,0 +1,11 @@
+project_id = "commerce-flow-data-platform"
+
+gcs_bucket_name = "commerceflow-olist-bruno"
+
+raw_dataset_id = "commerceflow_raw"
+
+analytics_dataset_id = "commerceflow_analytics"
+
+dbt_service_account_id = "commerceflow-dbt"
+
+credentials_file = "../secrets/commerceflow-dbt-key.json"
