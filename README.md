@@ -4,6 +4,8 @@ CommerceFlow is a modern data engineering project that builds an end-to-end e-co
 
 The project uses real-world e-commerce data, loads it into BigQuery, transforms it into analytics-ready marts with dbt, validates data quality with dbt tests, orchestrates the transformation workflow with Airflow, and prepares the final models for business intelligence dashboards.
 
+> Learning note: this project was built while studying modern data engineering concepts, with inspiration from the [Data Engineering Zoomcamp by DataTalksClub](https://github.com/DataTalksClub/data-engineering-zoomcamp). The implementation, architecture and business case were adapted into a custom e-commerce analytics platform.
+
 ---
 
 ## Architecture
