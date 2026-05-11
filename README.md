@@ -10,7 +10,9 @@ The project uses real-world e-commerce data, loads it into BigQuery, transforms 
 
 ## Architecture
 
-![CommerceFlow Architecture](docs/images/architecture.png)
+<p align="center">
+  <img src="docs/images/architecture.png" alt="CommerceFlow Architecture" width="100%">
+</p>
 
 ---
 
