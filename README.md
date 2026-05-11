@@ -62,7 +62,7 @@ The goal of this project is to transform raw transactional data into analytical 
 
 ## Data Source
 
-This project uses the **Olist Brazilian E-Commerce Public Dataset**, a real-world anonymized e-commerce dataset containing information about:
+This project uses the **Olist Brazilian E-Commerce Public Dataset** (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), a real-world anonymized e-commerce dataset containing information about:
 
 - orders
 - customers
