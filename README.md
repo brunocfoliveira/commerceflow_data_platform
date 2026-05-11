@@ -1,4 +1,4 @@
-# CommerceFlow — Modern E-commerce Data Platform
+# CommerceFlow - Commerce Data Platform
 
 CommerceFlow is a modern data engineering project that builds an end-to-end e-commerce analytics platform using Google Cloud Platform, BigQuery, dbt, Terraform and Airflow.
 
