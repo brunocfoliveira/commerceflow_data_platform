@@ -44,7 +44,7 @@ The goal of this project is to transform raw transactional data into analytical 
 
 ---
 
-## Tech Stack
+##Stack
 
 | Layer | Technology |
 |---|---|
