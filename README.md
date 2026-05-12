@@ -16,21 +16,19 @@ The project uses real-world e-commerce data, loads it into BigQuery, transforms 
 
 ---
 
-## Dashboard Preview
+## Dashboards
 
 ### Executive Overview
 
-![Executive Dashboard](docs/images/dashboard-executive-overview.png)
+![Executive Overview](docs/images/executive_overview.png)
 
 ### Sales Performance
 
-![Sales Dashboard](docs/images/dashboard-sales-performance.png)
+![Sales Performance](docs/images/sales_performance.png)
 
-### Regional and Payment Performance
+### Regional, Payments & Delivery
 
-![Regional Dashboard](docs/images/dashboard-regional-payment.png)
-
----
+![Regional, Payments & Delivery](docs/images/regional_payments_delivery_performance.png)
 
 ## Project Overview
 
@@ -91,7 +89,7 @@ Data platform for e-commerce site
 
 ## Local Architecture
 dbt is used as the main transformation layer, managing staging models, analytics marts, tests and documentation.
->>>>>>> f73c1c4 (airflow orchestration dbt)
+(airflow orchestration dbt)
 
 ```text
 Olist CSV files
@@ -119,4 +117,3 @@ To generate the dbt documentation locally, run:
 
 ```bash
 dbt docs generate --project-dir dbt --profiles-dir .
->>>>>>> f73c1c4 (airflow orchestration dbt)
