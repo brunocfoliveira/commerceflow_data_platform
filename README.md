@@ -79,36 +79,6 @@ This project uses the **Olist Brazilian E-Commerce Public Dataset** (https://www
 The raw CSV files are not stored in this repository.
 
 ---
-
-## Cloud Data Pipeline
-
-The cloud pipeline follows this flow:
-=======
-# commerceflow_data_platform
-Data platform for e-commerce site
-
-## Local Architecture
-dbt is used as the main transformation layer, managing staging models, analytics marts, tests and documentation.
-(airflow orchestration dbt)
-
-```text
-Olist CSV files
-      ↓
-Google Cloud Storage
-      ↓
-BigQuery raw dataset
-      ↓
-dbt sources
-      ↓
-dbt staging models
-      ↓
-dbt intermediate model
-      ↓
-dbt analytics marts
-      ↓
-Looker Studio dashboards
-
-
 ## dbt Documentation
 
 The project includes dbt models, sources and tests.
